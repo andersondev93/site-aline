@@ -31,6 +31,7 @@ header{
 }
 
 header > .Interface{
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +57,7 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
+    
 }
 header .contato-aline button{
     padding: 10px 40px;
@@ -74,13 +76,15 @@ header .contato-aline button:hover{
 section{
     padding-top: 25vh;
     padding-bottom: 25vh;
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
 
 }
 
 section.normal{
-    background-color: #F2C6C2;
+    background-image: linear-gradient(to bottom, #F2C6C2, #F2E8DF);
+    padding: 20px;
     
 }
 
@@ -92,6 +96,7 @@ section.imagem{
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 .imagem p{
@@ -108,40 +113,70 @@ section.imagem{
 
 div.topo-site{
     background-color: rgba(0, 0, 0, 0.274);
-    width: 400px;
-    display: inline-block;
+    width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
     text-align: justify;
 }
 
 div.sobre-mim{
     background-color: rgba(0, 0, 0, 0.274);
-    width: 400px;
+    width: 380px;
     display: inline-block;
     padding: 10px;
     text-align: justify;
 }
 
+.serviços{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao2 h1{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
 .serviços div{
     border: black solid;
     background-color: #044A59;
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-    padding: 10px;
-    
-    
-    
+    color: white;
+    width: 320px;
 }
 
+.serviços div img{
+    width: 300px;
+    height: 300px;
+    padding-left: 15px;    
+}
+
+.serviços div p{
+    text-align: justify;
+    padding: 5px;
+}
+
+.rede-social{
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede-social img{
+    width: 80px;
+}
 
 
 #secao5{
     padding: 10px;
-    background-position: center center;
+    background-image: url('imagens/aline-02.jpeg');
 }
 
 footer{
