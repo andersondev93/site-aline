@@ -1,14 +1,18 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body{
-       background-color: #F2E8DF;
-    
+    background-color:#F2E8DF ;
+    min-height: 100vh;
 }
 .Interface{
     max-width: 1280px;
@@ -66,110 +70,84 @@ header .contato-aline button{
 header .contato-aline button:hover{
     box-sizing: 0px 0px 8px  #D9564A;
 }
-section.topo-do-site{
-    padding: 135px 4%;
-    background-image: linear-gradient(to top, #F2E8DF, #F2C6C2);
-    
-}
-section.topo-do-site .flex{
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-    
-}
-.topo-do-site h1{
-    color: black;
-    font-size: 42px;
+
+section{
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    padding-left: 30px;
+    font-size: 18px;
 
 }
-.topo-do-site .txt-topo-site p{
-    color: black;
-    margin: 70px 0;
-    font-size: 30px;
+
+section.normal{
+    background-color: #F2C6C2;
+    
+}
+
+section.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem p{
+    padding-top: 15px;
+}
+
+#secao1{
+    background-image: url('imagens/aline-03.jpeg');
+}
+
+#secao3{
+    background-image: url('imagens/aline-02.jpeg');
+}
+
+div.topo-site{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 400px;
+    display: inline-block;
+    padding: 10px;
     text-align: justify;
 }
-.topo-do-site .img-topo-site img{
-    max-width:420px;
-    max-height:370px;
-    width: auto;
-    height: auto;
-}
 
-section.meio-do-site{
-    padding: 135px 4%;
-    background-image: linear-gradient(to top, #F2E8DF, #F2C6C2);
-    
-}
-section.meio-do-site .flex{
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-    
-}
-.meio-do-site h1{
-    color: black;
-    font-size: 42px;
-
-}
-.meio-do-site .txt-meio-site p{
-    color: black;
-    margin: 15px 0;
-    font-size: 30px;
+div.sobre-mim{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 400px;
+    display: inline-block;
+    padding: 10px;
     text-align: justify;
 }
-.meio-do-site .img-meio-site img{
-    max-width:500px;
-    max-height:450px;
-    width: auto;
-    height: auto;
-    
-}
 
-section.tres-do-site{
-    padding: 135px 4%;
-    background-color: #007172;
-}
-section.tres-do-site .flex{
-    justify-content: center;
+.serviços div{
+    border: black solid;
+    background-color: #044A59;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
     align-items: center;
-    gap: 90px;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    
+    
     
 }
-.tres-do-site h1{
-    color: #ffffff;
-    font-size: 42px;
 
-}
-.tres-do-site .txt-tres-site p{
-    color: #ffffff;
-    margin: 15px 0;
-    font-size: 30px;
-    text-align: justify;
-}
-.tres-do-site .img-tres-site img{
-    max-width:1500px;
-    max-height:1450px;
-    width: auto;
-    height: auto;
-    background-position: 0%;
 
+
+#secao5{
+    padding: 10px;
+    background-position: center center;
 }
 
-section.rs-do-site{
-    padding: 400px 4%;
-    background-image: linear-gradient(to top, #F2E8DF, #F2C6C2);
-}
-
-.rs-do-site h1{
-    color: #D9564A;
-    font-size: 42px;
-}
 footer{
     background-color: #044A59;
     padding: 25px 4%;
+    text-align: center;
+    color: white;
 }
 
-footer h1{
-    color: white;
-    text-align: center;
-}
