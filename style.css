@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color:#F2E8DF ;
+    background-color:#F2E8DF;
     min-height: 100vh;
 }
 .Interface{
@@ -23,7 +23,7 @@ body{
 }
 
 header{
-    padding: 5px 4%;  
+    padding: 0px 4%;  
     position: sticky;
     top: 0;
     background-color: #F2E8DF;
@@ -41,7 +41,7 @@ header div a img{
     width: 80px;
 }
 header a{
-    color: rgb(83, 83, 83);
+    color: #7D6059;
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
@@ -83,7 +83,7 @@ section{
 }
 
 section.normal{
-    background-image: linear-gradient(to bottom, #F2C6C2, #F2E8DF);
+    background-color: #F2E8DF;
     padding: 20px;
     
 }
@@ -91,8 +91,8 @@ section.normal{
 section.imagem{
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
     background-color: rgba(0, 0, 0, 0.329);
-    color: white;
-    text-shadow: 1px 1px 0px black;
+    color: #7D6059;
+    /*text-shadow: 1px 1px 0px white;*/
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
@@ -104,15 +104,15 @@ section.imagem{
 }
 
 #secao1{
-    background-image: url('imagens/aline-03.jpeg');
+    background-image: url('imagens/aline-03.jpg');
 }
 
 #secao3{
-    background-image: url('imagens/aline-02.jpeg');
+    background-image: url('imagens/aline-02.jpg');
 }
 
 div.topo-site{
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(245, 243, 243, 0.548);
     width: 380px;
     display: flex;
     flex-wrap: wrap;
@@ -122,7 +122,7 @@ div.topo-site{
 }
 
 div.sobre-mim{
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(245, 243, 243, 0.548);
     width: 380px;
     display: inline-block;
     padding: 10px;
@@ -139,15 +139,18 @@ div.sobre-mim{
 
 #secao2 h1{
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     padding-bottom: 20px;
+    color: #7D6059;
 }
 
 .serviços div{
-    border: black solid;
-    background-color: #044A59;
-    color: white;
-    width: 320px;
+    /*border: #7D6059 solid;*/
+    border-radius: 10px;
+    background-color: #D3AD9B;
+    color: black;
+    width: 300px;
+    height: 507px;
 }
 
 .serviços div img{
@@ -156,9 +159,13 @@ div.sobre-mim{
     padding-left: 15px;    
 }
 
+
+
 .serviços div p{
-    text-align: justify;
+    text-align: center;
     padding: 5px;
+    width: 300px;
+    height: 200px;
 }
 
 .rede-social{
@@ -167,6 +174,7 @@ div.sobre-mim{
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    color: #7D6059;
 }
 
 .rede-social img{
@@ -175,14 +183,14 @@ div.sobre-mim{
 
 
 #secao5{
-    padding: 50px;
-    background-image: url('imagens/aline-02.jpeg');
+    padding: 20px;
+    background-image: url('imagens/aline-02.jpg');
 }
 
 footer{
-    background-color: #044A59;
-    padding: 25px 4%;
+    background-color: #F2E8DF;
+    padding: 20px 4%;
     text-align: center;
-    color: white;
+    color: black;
 }
 
