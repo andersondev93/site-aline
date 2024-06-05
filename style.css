@@ -93,7 +93,7 @@ section.imagem{
     background-color: rgba(0, 0, 0, 0.329);
     color: #7D6059;
     /*text-shadow: 1px 1px 0px white;*/
-    background-position: left center;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     
