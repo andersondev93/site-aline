@@ -23,7 +23,7 @@ body{
 }
 
 header{
-    padding: 0px 4%;  
+    padding: 0px;  
     position: sticky;
     top: 0;
     background-color: #F2E8DF;
