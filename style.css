@@ -103,7 +103,7 @@ header .contato-aline button:hover{
     z-index: 99999;
     width: 0%;
     overflow: hidden;
-    transition: .4s;
+    transition: .6s;
 }
 
 .menu-mobile.abrir-menu{
