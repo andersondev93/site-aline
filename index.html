@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aline Sandes Psicóloga</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,19 +16,39 @@
                 <a href="#"><img src="imagens/psicologia.png" alt="Logo da Aline Psicóloga"></a>
                 
             </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#secao1">Home</a></li>
-                    <li><a href="#secao2">Serviços</a></li>
-                    <li><a href="#secao3">Sobre Mim</a></li>
-                    <li><a href="#secao4">Redes Sociais</a></li>
-                </ul>
-            </nav>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#secao1">Home</a></li>
+                        <li><a href="#secao2">Serviços</a></li>
+                        <li><a href="#secao3">Sobre Mim</a></li>
+                        <li><a href="#secao4">Redes Sociais</a></li>
+                    </ul>
+                </nav>
             <div class="contato-aline">
                 <a href="#"><button>Contato</button></a>
-                
+            </div>
+            
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
             </div>
 
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#secao1">Home</a></li>
+                        <li><a href="#secao2">Serviços</a></li>
+                        <li><a href="#secao3">Sobre Mim</a></li>
+                        <li><a href="#secao4">Redes Sociais</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="overley-menu" id="overley-menu"></div>
         </div>
     </header>
     <main>
@@ -85,14 +108,14 @@
     
                     <div>
                         <h3>ONDE NOS ENCONTRAR</h3>
-                        <p>98 98491-9537</p>
-                        <p>98 XXXXX-XXXX</p>
+                        <p><a href="#"><i class="bi bi-whatsapp"></i> 98 98491-9537</a></p>
+                        <p><a href="#"><i class="bi bi-whatsapp"></i> 98 XXXXX-XXXX</a></p>
                     </div>
                 
                     <div>
                         <h3>REDES SOCIAIS</h3>
-                        <p>@sandesaline</p>
-                        <p>@psialinesandes</p>
+                        <p><a href="#"><i class="bi bi-instagram"></i> @sandesaline</a></p>
+                        <p><a href="#"><i class="bi bi-instagram"></i> @psialinesandes</a></p>
                     </div>              
                 </div>
             </div>
