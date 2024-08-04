@@ -16,7 +16,6 @@ body, html {
     overflow-x: hidden;
     scrollbar-width: none;
     margin: 0 auto;
-    max-width: 1280px;
 }
 
 
@@ -35,9 +34,7 @@ header > .menu2 {
     justify-content: space-between;
     
 }
-header div a img{
-    width: 80px;
-}
+
 header a{
     color: #7D6059;
     text-decoration: none;
@@ -140,39 +137,40 @@ header .contato-aline button:hover{
 }
 
 section{
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 18px;
-
 }
 
 section.normal{
-    height: 600px;
     background-color: #F2E8DF;
-    padding: 20px;*
-    box-shadow: inset 6px 6px 20px 0px rgba(0, 0, 0, 0.637);
-    background-color: rgba(0, 0, 0, 0.329);
-    color: #7D6059;
+    /*box-shadow: inset 1px 1px 5px 0px #7D6059;*/
+    border: 1px solid #7D6059;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
 }
 
 section.imagem{
-    box-shadow: inset 6px 6px 20px 0px rgba(0, 0, 0, 0.637);
-    background-color: rgba(0, 0, 0, 0.329);
-    color: #7D6059;
-    /*text-shadow: 1px 1px 0px white;*/
     background-position: center center;
     background-size: cover;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: left;
-    
+    justify-content: center;
+    background-image: url(imagens/sala.jpg);
 }
 
-#alineImagem {
-    width: 300px;
-    height: 300px;
+div.aline-imagem img {
+    width: 350px;
+    height: 350px;
+    border-radius: 120px 30px;
+    border: 1px solid #7D6059;
+    
 }
 
 .imagem p{
@@ -185,18 +183,22 @@ section.imagem{
 
 
 div.topo-site{
-    background-color: rgba(245, 243, 243, 0.548);
     width: 400px;
     padding: 10px;
     text-align: justify;
+    color: white;
+    /*text-shadow: 1px 1px 0px black;*/
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 30px;
+    
 }
 
 div.sobre-mim{
-    background-color: rgba(245, 243, 243, 0.548);
-    width: 380px;
+    width: 400px;
     display: inline-block;
     padding: 10px;
     text-align: justify;
+    color: #7D6059;
 }
 
 .serviços{
@@ -238,6 +240,16 @@ div.sobre-mim{
     height: 200px;
 }
 
+#depoimentos {
+    padding: 0px;
+    background-color: #D9564A;
+    color: white;
+}
+
+.depoimentos {
+    padding: 10px;
+}
+
 .rede-social{
     display: flex;
     gap: 10px;
@@ -264,7 +276,7 @@ div.sobre-mim{
 }
 
 footer{
-    background-color: #F2E8DF;
+    background-color: #D3AD9B;
     padding: 20px 4%;
     text-align: center;
     color: black;
@@ -275,7 +287,7 @@ footer{
         display: none;
     }
 
-    .Interface .Logo{
+    .menu2 .Logo{
         padding-left: 10px;
     }
 
