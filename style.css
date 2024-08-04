@@ -10,9 +10,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body{
+body, html {
     background-color:#F2E8DF;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 .Interface{
     max-width: 1280px;
