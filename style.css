@@ -11,11 +11,12 @@
 }
 
 body, html {
-    background-color:#F2E8DF;
+    background-color: #F2E8DF;
     min-height: 100vh;
     overflow-x: hidden;
     scrollbar-width: none;
     margin: 0 auto;
+    
 }
 
 
@@ -144,6 +145,8 @@ section{
     font-size: 18px;
 }
 
+
+
 section.normal{
     background-color: #F2E8DF;
     /*box-shadow: inset 1px 1px 5px 0px #7D6059;*/
@@ -154,6 +157,13 @@ section.normal{
     flex-wrap: wrap-reverse;
     justify-content: center;
     
+}
+
+section.normal h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #7D6059;
 }
 
 section.imagem{
@@ -173,14 +183,6 @@ div.aline-imagem img {
     
 }
 
-.imagem p{
-    padding-top: 15px;
-}
-
-.normal p{
-    padding-top: 15px;
-}
-
 
 div.topo-site{
     width: 400px;
@@ -194,90 +196,67 @@ div.topo-site{
 }
 
 div.sobre-mim{
-    width: 400px;
+    width: 350px;
     display: inline-block;
     padding: 10px;
     text-align: justify;
     color: #7D6059;
 }
 
-.serviços{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#secao2 h1{
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 20px;
-    color: #7D6059;
-}
-
-.serviços div{
-    /*border: #7D6059 solid;*/
-    border-radius: 10px;
+.card {
+    width: 350px;
+    height: 600px;
+    margin: 25px;
     background-color: #D3AD9B;
     color: black;
-    width: 300px;
-    height: 507px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 0px #7D6059;
 }
 
-.serviços div img{
-    width: 300px;
-    height: 300px;
-    padding-left: 15px;    
+.card-img {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
 }
 
+.card img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
 
-
-.serviços div p{
-    text-align: center;
-    padding: 5px;
-    width: 300px;
-    height: 200px;
+.card-txt {
+    height: 170px;
+    padding: 10px;
+    text-align: justify;
 }
 
 #depoimentos {
     padding: 0px;
-    background-color: #D9564A;
+    background-color: #645F5F;
     color: white;
 }
 
 .depoimentos {
     padding: 10px;
+    text-align: center;
 }
 
-.rede-social{
-    display: flex;
-    gap: 10px;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    color: #7D6059;
-    
-}
-
-.rede-social a{
+.rede-social a {
     text-decoration: none;
     color: #7D6059;
 }
 
-.rede-social img{
-    width: 80px;
+.rede-social h3 {
+    color: #7D6059;
 }
 
 
-#secao5{
-    padding: 20px;
-    background-image: url('imagens/aline-02.jpg');
-}
 
 footer{
     background-color: #D3AD9B;
-    padding: 20px 4%;
+    padding: 10px 4%;
     text-align: center;
     color: black;
 }
@@ -293,5 +272,64 @@ footer{
 
     .btn-abrir-menu{
         display: block;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    section.normal{
+        gap: 30px;
+    }
+    div.topo-site {
+        width: 100%;
+        height: 400px;
+        border-radius: 0;
+        text-align: center;
+    }
+   
+
+    div.topo-site h1 {
+        padding-bottom: 20px;
+        font-size: 50px;
+        
+    }
+    div.topo-site p {
+        padding: 20px 0px;
+        font-size: 30px;
+        
+        
+    }
+    div.sobre-mim {
+        width: 500px;
+        height: 600px;
+    }
+    div.aline-imagem img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .serviços{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .depoimentos {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        
+    }
+    .rede-social{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding: 50px;
     }
 }
