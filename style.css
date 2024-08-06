@@ -24,7 +24,9 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #F2E8DF; 
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 header > .menu {
@@ -138,8 +140,8 @@ header .contato-aline button:hover{
 }
 
 section{
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 18px;
@@ -148,7 +150,9 @@ section{
 
 
 section.normal{
-    background-color: #F2E8DF;
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center center;
     /*box-shadow: inset 1px 1px 5px 0px #7D6059;*/
     border: 1px solid #7D6059;
     padding: 20px;
@@ -156,7 +160,8 @@ section.normal{
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: center flex-end;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 section.normal h1 {
@@ -168,6 +173,8 @@ section.normal h1 {
 }
 
 section.imagem{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -197,19 +204,22 @@ div.topo-site{
 }
 
 div.sobre-mim{
+    background: #F2E8DF;
     width: 350px;
     display: inline-block;
     padding: 10px;
     text-align: justify;
     color: #7D6059;
+    border-radius: 30px;
+    border: 1px solid #7D6059;
 }
 
 .card {
     width: 320px;
     height: 510px;
     margin: 25px;
-    background-color: #D3AD9B;
-    color: black;
+    background-color: #F2E8DF;
+    color: #7D6059;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 1px 1px 5px 0px #7D6059;
@@ -239,27 +249,46 @@ div.sobre-mim{
     font-size: 16px;
 }
 
-.depoimentos {
-    margin: auto 0;
-    height: 400px;
-    overflow: hidden;
-    background-color: #645F5F;
-    color: white;
-}
-
-.slides{
-    width: 400%;
-    height: 400px;
+#depoimentos {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D6059;
 }
 
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
+.depoimentos {
+    width: 100%;
+    padding: 50px 20px;
+    max-width: 900px;
     position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.depoimentos i {
+    font-size: 90px;
+    color: #dfdfdf;
+}
+
+.depoimentos p {
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #dfdfdf;
+    font-size: 30px;
+}
+
+.depoimentos .slide {
+    padding: 40px 60px;
+    cursor: grab;
+}
+
+.depoimentos .slide:active {
+    cursor: grabbing;
+}
+
+div.nav-btn {
+    color: #dfdfdf;
+    
 }
 
 div.rede-social{
@@ -278,12 +307,11 @@ div.rede-social{
 }
 
 
-
 footer{
-    background-color: #D3AD9B;
+    background-color: #F2E8DF;
     padding: 10px 4%;
     text-align: center;
-    color: black;
+    color: #7D6059;
 }
 
 @media screen and (max-width: 1000px){
@@ -297,6 +325,9 @@ footer{
 
     .btn-abrir-menu{
         display: block;
+    }
+    div.nav-btn {
+        display: none;
     }
 }
 
@@ -342,7 +373,7 @@ footer{
         
     }
     div.sobre-mim {
-        width: 500px;
+        width: 600px;
         height: 600px;
     }
     div.aline-imagem img {
@@ -362,5 +393,9 @@ footer{
         display: flex;
         align-items: center;
         padding: 50px;
+        
+    }
+    .rede-social h3 {
+        padding-bottom: 10px;
     }
 }
